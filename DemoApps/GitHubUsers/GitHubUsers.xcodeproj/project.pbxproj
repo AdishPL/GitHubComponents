@@ -19,6 +19,7 @@
 		320AA7EE2BBEDD9700806758 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		320AA7F02BBEDD9800806758 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		320AA7F32BBEDD9800806758 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		322E107D2BC0BB9100194528 /* GitHubComponents */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = GitHubComponents; path = ../../GitHubComponents; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +36,7 @@
 		320AA7E02BBEDD9700806758 = {
 			isa = PBXGroup;
 			children = (
+				322E107D2BC0BB9100194528 /* GitHubComponents */,
 				320AA7EB2BBEDD9700806758 /* GitHubUsers */,
 				320AA7EA2BBEDD9700806758 /* Products */,
 			);
