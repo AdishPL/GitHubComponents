@@ -11,6 +11,7 @@
 		320AA7EF2BBEDD9700806758 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320AA7EE2BBEDD9700806758 /* ContentView.swift */; };
 		320AA7F12BBEDD9800806758 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 320AA7F02BBEDD9800806758 /* Assets.xcassets */; };
 		320AA7F42BBEDD9800806758 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 320AA7F32BBEDD9800806758 /* Preview Assets.xcassets */; };
+		3215BE492BBF82A100EE24B5 /* Users in Frameworks */ = {isa = PBXBuildFile; productRef = 3215BE482BBF82A100EE24B5 /* Users */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		320AA7EE2BBEDD9700806758 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		320AA7F02BBEDD9800806758 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		320AA7F32BBEDD9800806758 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		32B7E7902BBF7AC4006E1CAC /* .. */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = ..; path = ../..; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3215BE492BBF82A100EE24B5 /* Users in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,8 +38,10 @@
 		320AA7E02BBEDD9700806758 = {
 			isa = PBXGroup;
 			children = (
+				329B12722BBF7B2700AFC76B /* Packages */,
 				320AA7EB2BBEDD9700806758 /* GitHubUsers */,
 				320AA7EA2BBEDD9700806758 /* Products */,
+				3215BE472BBF82A100EE24B5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +72,21 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		3215BE472BBF82A100EE24B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		329B12722BBF7B2700AFC76B /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				32B7E7902BBF7AC4006E1CAC /* .. */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,6 +103,9 @@
 			dependencies = (
 			);
 			name = GitHubUsers;
+			packageProductDependencies = (
+				3215BE482BBF82A100EE24B5 /* Users */,
+			);
 			productName = GitHubUsers;
 			productReference = 320AA7E92BBEDD9700806758 /* GitHubUsers.app */;
 			productType = "com.apple.product-type.application";
@@ -197,7 +220,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -254,7 +277,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -342,6 +365,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3215BE482BBF82A100EE24B5 /* Users */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Users;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 320AA7E12BBEDD9700806758 /* Project object */;
 }

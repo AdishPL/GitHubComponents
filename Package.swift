@@ -5,19 +5,24 @@ import PackageDescription
 
 let package = Package(
     name: "GitHubComponents",
+    platforms: [.iOS(.v15)],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "GitHubComponents",
-            targets: ["GitHubComponents"]),
+            name: "Users",
+            targets: ["Users"]),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "GitHubComponents"),
+            name: "Users",
+            path: "Products/Users",
+            sources: ["Sources"]),
         .testTarget(
-            name: "GitHubComponentsTests",
-            dependencies: ["GitHubComponents"]),
+            name: "UsersTests",
+            dependencies: ["Users"],
+            path: "Tests/Users",
+            sources: ["Sources"])
     ]
 )
