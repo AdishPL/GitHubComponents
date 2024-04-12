@@ -11,6 +11,11 @@
 		320AA7EF2BBEDD9700806758 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320AA7EE2BBEDD9700806758 /* ContentView.swift */; };
 		320AA7F12BBEDD9800806758 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 320AA7F02BBEDD9800806758 /* Assets.xcassets */; };
 		320AA7F42BBEDD9800806758 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 320AA7F32BBEDD9800806758 /* Preview Assets.xcassets */; };
+		32C576602BC0BE640046DC02 /* Users in Frameworks */ = {isa = PBXBuildFile; productRef = 32C5765F2BC0BE640046DC02 /* Users */; };
+		32C576622BC0CAC20046DC02 /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = 32C576612BC0CAC20046DC02 /* Networking */; };
+		32C576642BC0CAC20046DC02 /* Persistence in Frameworks */ = {isa = PBXBuildFile; productRef = 32C576632BC0CAC20046DC02 /* Persistence */; };
+		32C576662BC0CAC20046DC02 /* Services in Frameworks */ = {isa = PBXBuildFile; productRef = 32C576652BC0CAC20046DC02 /* Services */; };
+		32C576682BC0CAC20046DC02 /* ViewModels in Frameworks */ = {isa = PBXBuildFile; productRef = 32C576672BC0CAC20046DC02 /* ViewModels */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +32,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32C576662BC0CAC20046DC02 /* Services in Frameworks */,
+				32C576642BC0CAC20046DC02 /* Persistence in Frameworks */,
+				32C576682BC0CAC20046DC02 /* ViewModels in Frameworks */,
+				32C576622BC0CAC20046DC02 /* Networking in Frameworks */,
+				32C576602BC0BE640046DC02 /* Users in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,6 +49,7 @@
 				322E107D2BC0BB9100194528 /* GitHubComponents */,
 				320AA7EB2BBEDD9700806758 /* GitHubUsers */,
 				320AA7EA2BBEDD9700806758 /* Products */,
+				32C5765E2BC0BE640046DC02 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,6 +80,13 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		32C5765E2BC0BE640046DC02 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -85,6 +103,13 @@
 			dependencies = (
 			);
 			name = GitHubUsers;
+			packageProductDependencies = (
+				32C5765F2BC0BE640046DC02 /* Users */,
+				32C576612BC0CAC20046DC02 /* Networking */,
+				32C576632BC0CAC20046DC02 /* Persistence */,
+				32C576652BC0CAC20046DC02 /* Services */,
+				32C576672BC0CAC20046DC02 /* ViewModels */,
+			);
 			productName = GitHubUsers;
 			productReference = 320AA7E92BBEDD9700806758 /* GitHubUsers.app */;
 			productType = "com.apple.product-type.application";
@@ -344,6 +369,29 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		32C5765F2BC0BE640046DC02 /* Users */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Users;
+		};
+		32C576612BC0CAC20046DC02 /* Networking */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Networking;
+		};
+		32C576632BC0CAC20046DC02 /* Persistence */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Persistence;
+		};
+		32C576652BC0CAC20046DC02 /* Services */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Services;
+		};
+		32C576672BC0CAC20046DC02 /* ViewModels */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ViewModels;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 320AA7E12BBEDD9700806758 /* Project object */;
 }
